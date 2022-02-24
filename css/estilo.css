@@ -1,0 +1,1145 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    background-color: black;
+}
+.contenedorPadre{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+li{
+    list-style-type:none;
+    display: flex;
+    justify-content:flex-end;
+    
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+a:hover{
+    color: rgb(236, 217, 41);;
+}
+
+@media (min-width: 1024px){ 
+    .gridHeader{
+        display: grid;
+        grid-area: 
+        "logo nav";
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 210px;
+    }
+    .logoEncabezado{
+        grid-area: logo;
+        height: 90%;
+        width: auto;
+        padding-top: 20px;
+    }
+    li{
+        padding: 20px;
+        padding-top: 80px;
+    }
+    a{
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+        padding:20px;
+        font-weight: bold;
+        letter-spacing: 5px; 
+    }
+    ul{
+        display:flex;
+        justify-content: center;
+    }
+
+    .navbar ul{
+        grid-area:nav ;
+        height: 100%;
+        width: auto;
+        justify-content: flex-end;
+    }
+    .gridMain{
+        background-image: url(../assets/img/nirvanainiciodos.png);
+        background-size: cover;
+        background-attachment:fixed;
+        background-position: 0px 180px;
+        background-repeat: no-repeat;
+        width: auto;
+        height:1600px;
+    }
+
+    .txtMain{
+        color: white;
+        font-family: 'Bodoni Moda', serif;
+        text-align:center;
+        font-size: 180px;
+        color: rgb(236, 217, 41); 
+        text-shadow: 8px 8px 8px black;
+        padding-top: 445px;
+    }
+
+    .mainBio{
+        display: grid;
+        grid-template-areas:
+        "txtbio txtbio"
+        "cardBio imgBio";
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto auto;
+        background-image: url(../assets/img/backgroundnirv.png.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .txtbio{
+        grid-area: txtbio;
+        color: white;
+        width: 200%;
+        font-family: 'Bodoni Moda', serif;
+        padding-left: 50%;
+        font-size: 100px;
+        text-shadow: 5px 5px 5px rgb(75, 73, 73);
+        color: rgb(236, 217, 41); 
+    }
+    .cardBio{
+        grid-area: cardBio;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(245, 245, 245);
+        word-spacing: 5px;
+        font-size: 23px;
+        line-height: 35px;
+        text-align:left;
+        text-shadow: 2px 2px 2px black;
+        padding:20px
+    }
+    .imgBio{
+        grid-area: imgBio;
+        display: grid;
+        grid-template-areas:
+        "img1"
+        "img2";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        padding:20px
+    }
+
+
+    .img1{
+        grid-area: img1;
+        width: 100%;
+        height: 430px;
+
+    }
+    .img2{
+        grid-area: img2;
+        width: 100%;
+        height: 430px;
+    }
+
+    .maindisco{
+        display: grid;
+        grid-template-areas:
+        "txtdisco txtdisco"
+        "albumBleach albumNevermind"
+        "albumInutero albumInutero";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, auto);
+        background-color: rgb(10, 10, 10);
+    }
+    .txtdisco{
+        grid-area:txtdisco ;
+        width: 200%;
+        font-family: 'Bodoni Moda', serif;
+        text-align: center;
+        font-size: 100px;
+        text-shadow: 5px 5px 5px rgb(75, 73, 73);
+        color: rgb(236, 217, 41); 
+    }
+
+    .albumBleach{
+        grid-area: albumBleach;
+        color: white;
+        display: grid;
+        width: auto;
+        grid-template-areas:
+        "portada1 tabla1";
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto;
+        padding-top: 70px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        
+    }
+    .portada1{
+        grid-area:portada1 ;
+        width: 500px;
+        height: 500px;
+        padding: 20px;
+    }
+    .tabla1{
+        grid-area:tabla1;
+        font-size: 17px;
+        width: 300px;
+    }
+
+
+    .albumNevermind{
+        grid-area:albumNevermind;
+        color: white;
+        width: auto;
+        display: grid;
+        grid-template-areas:
+        "portada2 tabla2";
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto;
+        padding-top: 70px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        
+    }
+    .portada2{
+        grid-area:portada2 ;
+        width: 500px;
+        height: 500px;
+        padding: 20px;
+
+    }
+    .tabla2{
+        grid-area:tabla2;
+        font-size: 17px;
+        width: 300px;
+    }
+
+
+    .albumInutero{
+        grid-area: albumInutero;
+        color: white;
+        width: 50%;
+        display: grid;
+        grid-template-areas:
+        "portada3 tabla3";
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto;
+        padding-top: 70px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+       
+    }
+    .portada3{
+        grid-area:portada3 ;
+        width: 500px;
+        height: 500px;
+        padding: 20px;
+    }
+    .tabla3{
+        grid-area:tabla3;
+        font-size: 17px;
+        width: 300px;
+    }
+
+    .tabla__encabezado{
+        color: rgb(236, 217, 41);
+        text-shadow: 3px 3px 3px rgb(75, 73, 73);
+        font-size: 20px;
+        font-family: 'Bodoni Moda', serif;
+        text-align: left;
+    }
+
+    .mainvid{
+        display: grid;
+        grid-template-areas: 
+        "txtvid txtvid txtvid" 
+        "video1 video2 video3"
+        "video4 video5 video6"
+        "video7 video8 video9";
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto auto auto auto;   
+        background-color: rgb(10, 10, 10);
+    }
+
+    .txtvid{
+        grid-area: txtvid;
+        font-family: 'Bodoni Moda', serif;
+        text-align: center;
+        font-size: 100px;
+        text-shadow: 5px 5px 5px rgb(75, 73, 73);
+        color: rgb(236, 217, 41); 
+        width: 300%;
+        display: flex;
+        justify-content: center
+        ;
+    }
+   
+    .video1{
+        grid-area: video1;
+    }
+    .video2{
+        grid-area: video2;
+    }
+    .video3{
+        grid-area: video3;
+    }
+
+    .video4{
+        grid-area: video4;
+    }
+    .video5{
+        grid-area: video5;
+    }
+    .video6{
+        grid-area: video6;
+    }
+
+    .video7{
+        grid-area: video7;
+    }
+    .video8{
+        grid-area: video8;
+        
+    }
+    .video9{
+        grid-area: video9;
+    }
+
+    .titulo{
+        text-align: center;
+        padding-top: 50px;
+        width: 90%;
+        color: rgb(236, 217, 41);
+        text-shadow: 3px 3px 3px rgb(75, 73, 73);
+        font-size: 25px;
+        font-family: 'Bodoni Moda', serif;
+    }
+
+
+
+
+
+
+    .mainContact{
+        display: grid;
+        grid-template-areas:
+        "txtcontact"
+        "mini__textp"
+        "formulario1"
+        "contenedor"
+        "formulario2";
+        grid-template-columns: auto;
+        grid-template-rows:repeat(5, auto);
+        background-color: rgb(10, 10, 10);
+    }
+    .txtcontact{
+        grid-area:txtcontact;
+        font-family: 'Bodoni Moda', serif;
+        text-align: center;
+        font-size: 100px;
+        text-shadow: 5px 5px 5px rgb(75, 73, 73);
+        color: rgb(236, 217, 41); 
+    }
+
+    .mini__textp{
+        grid-area:mini__textp;
+        color: rgb(95, 93, 93);
+        text-align: center;
+        font-weight:bold;
+        font-size: 15px;
+    }
+
+    .formulario1{
+        grid-area: formulario1;
+        width: 100%;
+        display:grid;
+        justify-content: center;
+        grid-template-areas:
+        "nombre"
+        "mail"
+        "mensaje"
+        "comentario"
+        "enviar";
+        grid-template-columns:auto;
+        grid-template-rows: repeat(5, auto); 
+    }
+    .txtcoment{
+        grid-area: mensaje;
+        color:white;
+        background-color: rgb(95, 93, 93);
+        margin-top: 10px;
+    }
+    .casilla1{
+        grid-area: nombre;
+        color:white;
+        background-color: rgb(95, 93, 93);
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .casilla2{
+        grid-area: mail;
+        color:white;
+        background-color: rgb(95, 93, 93);
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .casilla3{
+        grid-area: comentario;
+        color:white;
+        background-color: rgb(95, 93, 93);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;  
+    }
+    .submit{
+        grid-area: enviar;
+        color:rgb(236, 217, 41); 
+        background-color: rgb(95, 93, 93);
+        display: flex;
+        justify-content: center;
+    }
+    .submit:hover{
+        cursor: pointer;
+    }
+
+    .contenedor{
+        grid-area: contenedor;
+        color: white;
+        display: grid;
+        grid-template-areas:
+        "newsletter"
+        "newsletter__text ";
+        grid-template-columns:100%;
+        grid-template-rows: auto auto; 
+    }
+    .newsletter{
+        grid-area: newsletter;
+        width: auto;
+        font-family: 'Bodoni Moda', serif;
+        color: rgb(236, 217, 41); 
+        text-align: center;
+        text-shadow:1px 1px 1px black;
+    }
+    .newsletter__text{
+        grid-area: newsletter__text;
+        color:rgb(95, 93, 93);
+        width: auto;
+        font-weight:bold;
+        font-size:20px;
+        text-align: center;
+    }
+
+    .formulario2{
+        grid-area: formulario2;
+        display:grid;
+        justify-content:center;
+        width:auto;
+        margin-top: 20px;
+        grid-template-areas:
+        "mail"
+        "edad"
+        "codigopostal"
+        "paistxt"
+        "pais"
+        "minitext1"
+        "minitext2"
+        "cuadro"
+        "registrarme";
+        grid-template-columns:min-content;
+        grid-template-rows: repeat(9, auto); 
+    }
+
+    .casilla4{
+        grid-area: mail;
+        color:white;
+        background-color: rgb(95, 93, 93);
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .casilla5{
+        grid-area: edad;
+        color:white;
+        background-color: rgb(95, 93, 93);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .casilla6{
+        grid-area: codigopostal;
+        color:white;
+        background-color: rgb(95, 93, 93);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-bottom: 10px;  
+        margin-top: 10px;
+    }
+
+    .paistxt{
+        grid-area: paistxt;
+        width: 100%;
+        color: white;
+        background-color: rgb(95, 93, 93);
+        margin-top: 10px;
+    }
+
+    .casilla7{
+        grid-area: pais;
+        width: 100%;
+        color:black;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px; 
+    }
+    .minitext1{
+        grid-area: minitext1;
+        color: white;
+        text-align:center;
+        font-size: 12px;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .minitext2{
+        grid-area: minitext2;
+        color: white;
+        text-align:center;
+        font-size: 12px;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .cuadro{
+        grid-area: cuadro;
+        color: white;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .submit2{
+        grid-area: registrarme;
+        color :rgb(236, 217, 41); 
+        background-color: rgb(95, 93, 93);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gridFooter{
+        display: grid;
+        grid-template-areas: 
+        "txt logofoot";
+        grid-template-columns: 90% 10%;
+        grid-template-rows: 35px;
+    }
+
+    .txt{
+        grid-area: txt;
+        color: white;
+        font-size: 15px;
+        padding-top: 10px;  
+    }
+
+    .footerImg{
+        grid-area: logofoot;
+        display: flex;
+        justify-content: flex-end;
+        justify-content: space-evenly;
+        padding: 5px;
+    }
+
+    .logofoot{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px){ 
+    .gridHeader{
+        display: grid;
+        grid-template-areas: 
+        "logo nav";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 180px;
+        border: 1px solid black;
+    }
+
+    .logoEncabezado{
+        grid-area:logo;
+        width: 50%;
+        height: 80%;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        grid-area: nav;
+        width: auto;
+        height: 100%; 
+    }
+
+    .navbar ul li{
+        padding: 6px;
+        padding-right:25px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .gridMain{
+        background-image: url(../assets/img/nirvanainiciodos.png);
+        background-size:auto;
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 1160px;
+        width: auto;
+    }
+
+    .txtMain{
+        color:rgb(236, 217, 41); 
+        font-family: 'Bodoni Moda', serif;
+        text-align:center;
+        font-size: 100px;
+        text-shadow: 8px 8px 8px black;
+        display: flex;
+        justify-content: center;
+        padding: 250px;
+        
+    }
+
+    .mainBio{
+        display: grid;
+        grid-template-areas: 
+        "txtbio"
+        "cardBio"
+        "imgBio";
+        grid-template-columns:100%;
+        grid-template-rows: auto auto auto;
+        background-image: url(../assets/img/backgroundnirv.png.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    .txtbio{
+        grid-area: txtbio;
+        /* width: 200%; */
+        font-family: 'Bodoni Moda', serif;
+        /* padding-left: 50%; */
+        font-size: 70px;
+        text-align: center;
+        text-shadow: 5px 5px 5px rgb(75, 73, 73);
+        color: rgb(236, 217, 41); 
+        padding-top: 40px;
+    }
+    .cardBio{
+        grid-area:cardBio;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(245, 245, 245);
+        word-spacing: 3px;
+        font-size: 17px;
+        line-height: 28px;
+        text-align:center;
+        text-shadow: 2px 2px 2px black;
+        padding:20px 
+    }
+    .imgBio{
+        grid-area:imgBio;
+        display: grid;
+        grid-template-areas:
+        "img1 img2";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        
+    }
+    .img1{
+        grid-area: img1;
+        width: 100%;
+        height: 220px;
+    }
+    .img2{
+        grid-area: img2;
+        width: 100%;
+        height: 220px;
+    }   
+
+    .maindisco{
+        display: grid;
+        grid-template-areas:
+        "txtdisco"
+        "albumBleach"
+        "albumNevermind"
+        "albumInutero";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        background-color: rgb(10, 10, 10);
+    }
+    .txtdisco{
+        grid-area:txtdisco ;
+        font-family: 'Bodoni Moda', serif;
+        text-align: center;
+        font-size: 70px;
+        text-shadow: 5px 5px 5px rgb(75, 73, 73);
+        color: rgb(236, 217, 41); 
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .albumBleach{
+        grid-area: albumBleach;
+        display: grid;
+        grid-template-areas:
+        "portada1 tabla1";
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding-top:20px ;
+    }
+    .portada1{
+        grid-area:portada1 ;
+        width: 500px;
+        height: 80%; 
+        padding: 20px;
+    
+    }
+    .tabla1{
+        grid-area:tabla1;
+        color: white;
+        width: 200px;
+        font-size:12px;
+        padding: 10px;
+    }
+
+    .albumNevermind{
+        grid-area:albumNevermind;
+        color: white;
+        display: grid;
+        grid-template-areas:
+        "portada2 tabla2";
+        grid-template-columns: 70% 30%;;
+        grid-template-rows: auto;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding-top:20px ;
+    }
+    .portada2{
+        grid-area:portada2 ;
+        width: 500px;
+        height: 80%; 
+        padding: 20px;
+
+    }
+    .tabla2{
+        grid-area:tabla2;
+        color:white;
+        font-size:12px;
+        width: 200px;
+        padding: 10px;
+    }
+
+
+    .albumInutero{
+        grid-area: albumInutero;
+        display: grid;
+        grid-template-areas:
+        "portada3 tabla3";
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding-top:20px ;
+    }
+    .portada3{
+        grid-area:portada3 ;
+        width: 500px;
+        height: 80%;
+        padding: 20px; 
+    }
+    .tabla3{
+        grid-area:tabla3;
+        color: white;
+        width: 200px;
+        font-size:12px;
+        padding: 10px;
+
+
+    } 
+
+
+    .mainvid{
+        display: grid;
+        grid-template-areas: 
+        "txtvid"
+        "video1"
+        "video2"
+        "video3"
+        "video4"
+        "video5"
+        "video6"
+        "video7"
+        "video8"
+        "video9";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(10, auto);   
+        background-color: rgb(10, 10, 10);
+    }
+    .txtvid{
+        grid-area:txtvid;
+        font-family: 'Bodoni Moda', serif;
+        font-size: 70px;
+        width: 100%;
+        text-align: center;
+        text-shadow: 5px 5px 5px rgb(75, 73, 73);
+        color: rgb(236, 217, 41);
+        padding-top: 40px; 
+    }
+    .video1{
+        grid-area: video1;
+        width: 95%;
+        padding: 10px;
+    }
+    .video2{
+        grid-area: video2;
+        width: 95%;
+        padding: 10px;
+    }
+    .video3{
+        grid-area: video3;
+        width: 95%;
+        padding: 10px;
+    }
+    .video4{
+        grid-area: video4;
+        width: 95%;
+        padding: 10px;
+    }
+    .video5{
+        grid-area: video5;
+        width: 95%;
+        padding: 10px;
+    }
+    .video6{
+        grid-area: video6;
+        width: 95%;
+        padding: 10px;
+    }
+    .video7{
+        grid-area: video7;
+        width: 95%;
+        padding: 10px;
+    }
+    .video8{
+        grid-area: video8;
+        width: 95%;
+        padding: 10px;
+    }
+    .video9{
+        grid-area: video9;
+        width: 95%;
+        padding: 10px;
+        padding-bottom: 40px;
+    }
+
+    .titulo{
+        text-align: center;
+        padding-top: 40px;
+        width: 100%;
+        color: rgb(236, 217, 41);
+        text-shadow: 3px 3px 3px rgb(75, 73, 73);
+        font-size: 20px;
+        font-family: 'Bodoni Moda', serif;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .mainContact{
+        display: grid;
+        grid-template-areas:
+        "txtcontact"
+        "mini__textp"
+        "formulario1"
+        "contenedor"
+        "formulario2";
+        grid-template-columns:100%;
+        grid-template-rows: repeat(6, auto); 
+        background-color:rgb(10, 10, 10);
+    }
+
+    .txtcontact{
+        grid-area: txtcontact;
+        font-family: 'Bodoni Moda', serif;
+        font-size: 70px;
+        padding-top: 40px;
+        text-align: center;
+        text-shadow: 5px 5px 5px rgb(75, 73, 73);
+        color: rgb(236, 217, 41); 
+        width: auto;
+    }
+    .mini__textp{
+        grid-area: mini__textp;
+        width: auto;
+        text-align: center;
+        padding: 10px;
+        color: rgb(95, 93, 93);
+        font-weight:bold;
+        font-size: 12px;
+    }
+    .formulario1{
+        grid-area: formulario1;
+        display:grid;
+        justify-content: center;
+        width: auto;
+        grid-template-areas:
+        "nombre"
+        "mail"
+        "mensaje"
+        "comentario"
+        "enviar";
+        grid-template-columns:auto;
+        grid-template-rows: repeat(5, auto); 
+    }
+
+    .txtcoment{
+        grid-area: mensaje;
+        color:white;
+        margin-top: 10px;
+    }
+    .casilla1{
+        grid-area: nombre;
+        color:white;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .casilla2{
+        grid-area: mail;
+        color:white;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .casilla3{
+        grid-area: comentario;
+        color:white;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;  
+    }
+    .submit{
+        grid-area: enviar;
+        color:black;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor{
+        grid-area: contenedor;
+        color: white;
+        display: grid;
+        grid-template-areas:
+        "newsletter"
+        "newsletter__text ";
+        grid-template-columns:100%;
+        grid-template-rows: auto auto; 
+    }
+    .newsletter{
+        grid-area: newsletter;
+        width: auto;
+        font-family: 'Bodoni Moda', serif;
+        color: rgb(236, 217, 41); 
+        text-align: center;
+        text-shadow:1px 1px 1px black;
+    }
+    .newsletter__text{
+        grid-area: newsletter__text;
+        color:rgb(95, 93, 93);
+        width: auto;
+        font-weight:bold;
+        font-size:15px;
+        text-align: center;
+    }
+
+    .formulario2{
+        grid-area: formulario2;
+        display:grid;
+        justify-content:center;
+        width:auto;
+        margin-top: 20px;
+        grid-template-areas:
+        "mail"
+        "edad"
+        "codigopostal"
+        "paistxt"
+        "pais"
+        "minitext1"
+        "minitext2"
+        "cuadro"
+        "registrarme";
+        grid-template-columns:min-content;
+        grid-template-rows: repeat(9, auto); 
+    }
+
+    .casilla4{
+        grid-area: mail;
+        color:white;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .casilla5{
+        grid-area: edad;
+        color:white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .casilla6{
+        grid-area: codigopostal;
+        color:white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin-bottom: 10px;  
+        margin-top: 10px;
+    }
+
+    .paistxt{
+        grid-area: paistxt;
+        width: 100%;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .casilla7{
+        grid-area: pais;
+        width: 100%;
+        color:black;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px; 
+        margin-top: 10px; 
+    }
+    .minitext1{
+        grid-area: minitext1;
+        color: white;
+        text-align:center;
+        font-size: 12px;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .minitext2{
+        grid-area: minitext2;
+        color: white;
+        text-align:center;
+        font-size: 12px;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .cuadro{
+        grid-area: cuadro;
+        color: white;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .submit2{
+        grid-area: registrarme;
+        color: black;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .submit2:hover{
+        cursor: pointer;
+    }
+
+    .gridFooter{
+        display: grid;
+        grid-template-areas: 
+        "logofoot"
+        "txt";
+        grid-template-columns: 100%;
+        grid-template-rows: 28px;
+    } 
+
+    .footerImg{
+        grid-area: logofoot;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-top: 5px;
+    }
+
+    .txt{
+        grid-area: txt;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+        margin: 20px;
+    }
+}
