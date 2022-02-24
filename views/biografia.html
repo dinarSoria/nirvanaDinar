@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nirvana-Biografia</title>
-    <link rel="stylesheet" href="../css/biografia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
             <!-- INICIO NAV -->
             <nav class="navbar">
                 <!-- lista no ordenada -->
-                <ul>
+                <ul class="animate__animated animate__pulse">
                     <li><a href="../index.html">INICIO</a></li>
                     <li><a href="#">BIOGRAFIA</a></li>
                     <li><a href="discografia.html">DISCOGRAFIA</a></li>
@@ -91,8 +91,10 @@
             </p>
         </div>
         <div class="imgBio imgGrid card__background">
-            <img src="../assets/img/nirvana_biografia.png" alt="Nirvana concierto" class="img1">
-            <img src="../assets/img/nirvanabiografia.png" alt="Nirvana grupo" class="img2">
+            <img src="../assets/img/nirvana_biografia.png" alt="Nirvana concierto"
+                class="img1 animate__animated animate__flipInX">
+            <img src="../assets/img/nirvanabiografia.png" alt="Nirvana grupo"
+                class="img2 animate__animated animate__flipInX">
         </div>
     </main>
     <!-- CIERRE CONTENIDO -->
@@ -101,7 +103,7 @@
         <div class="txt">
             <h6 class="footertext">Página sin fines de lucro ni comerciales</h6>
         </div>
-        <div class="footerImg">
+        <div class="footerImg animate__animated animate__zoomIn">
             <img src="../assets/img/youtube.png" alt="logo youtube" class="logofoot">
             <img src="../assets/img/logo-de-facebook.png" alt="logo facebook" class="logofoot">
             <img src=" ../assets/img/instagram.png" alt="logo instagram" class="logofoot">
@@ -109,6 +111,10 @@
     </footer>
 
     <!-- CIERRE FOOTER -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

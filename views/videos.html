@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nirvana-Videos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
@@ -22,7 +23,7 @@
             <!-- INICIO NAV -->
             <nav class="navbar">
                 <!-- lista no ordenada -->
-                <ul>
+                <ul class="animate__animated animate__pulse">
                     <li><a href="../index.html">INICIO</a></li>
                     <li><a href="biografia.html">BIOGRAFIA</a></li>
                     <li><a href="discografia.html">DISCOGRAFIA</a></li>
@@ -113,7 +114,7 @@
         <div class="txt">
             <h6 class="footertext">Página sin fines de lucro ni comerciales</h6>
         </div>
-        <div class="footerImg">
+        <div class="footerImg animate__animated animate__zoomIn">
             <img src="../assets/img/youtube.png" alt="logo youtube" class="logofoot">
             <img src="../assets/img/logo-de-facebook.png" alt="log facebook" class="logofoot">
             <img src="../assets/img/instagram.png" alt="logo instagram" class="logofoot">
@@ -121,6 +122,10 @@
     </footer>
 
     <!-- CIERRE FOOTER -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

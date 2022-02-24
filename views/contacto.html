@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nirvana-Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
@@ -22,7 +23,7 @@
             <!-- INICIO NAV -->
             <nav class="navbar">
                 <!-- lista no ordenada -->
-                <ul>
+                <ul class="animate__animated animate__pulse">
                     <li><a href="../index.html">INICIO</a></li>
                     <li><a href="biografia.html">BIOGRAFIA</a></li>
                     <li><a href="discografia.html">DISCOGRAFIA</a></li>
@@ -43,7 +44,7 @@
                 comentario, por favor sentite libre de hacerlo.</p>
         </div>
         <!-- formulario de contacto -->
-        <form class="formulario1" action="#">
+        <form class="formulario1 animate__animated animate__fadeInLeft" action="#">
             <label for="nombre" class="casilla1">Nombre<br>
                 <input type="text" name="nombre" placeholder="Tú Nombre">
             </label><br>
@@ -63,7 +64,7 @@
             <p class="newsletter__text">Suscríbete al newsletter a continuación usando tu correo electrónico</p>
         </div>
         <!-- formulario newsletter -->
-        <form class="formulario2" action="#">
+        <form class="formulario2 animate__animated animate__fadeInLeft" action="#">
             <label for="email" class="casilla4">*Email<br>
                 <input type="email" name="email" placeholder="Tú email de contacto">
             </label><br>
@@ -284,7 +285,7 @@
         <div class="txt">
             <h6 class="footertext">Página sin fines de lucro ni comerciales</h6>
         </div>
-        <div class="footerImg">
+        <div class="footerImg animate__animated animate__zoomIn">
             <img src="../assets/img/youtube.png" alt="logo youtube" class="logofoot">
             <img src="../assets/img/logo-de-facebook.png" alt="logo facebook" class="logofoot">
             <img src="../assets/img/instagram.png" alt="logo instagram" class="logofoot">
@@ -292,7 +293,10 @@
     </footer>
     <!-- CIERRE FOOTER -->
 
-
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
